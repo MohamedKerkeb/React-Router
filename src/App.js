@@ -15,10 +15,15 @@ class App extends Component {
         </header>
         <BrowserRouter>
           <div>
-            <NavLink className="link" exact to="/">
-              Acceuil
+            <NavLink className="link" activeClassName="selected" exact to="/">
+              Accueil
             </NavLink>
-            <NavLink className="link" exact to="/notre-histoire.js">
+            <NavLink
+              className="link"
+              activeClassName="selected"
+              exact
+              to="/notre-histoire.js"
+            >
               Mon Histoire
             </NavLink>
             <Switch>
